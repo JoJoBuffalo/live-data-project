@@ -1,2 +1,2 @@
 # live-data-project
-Live cata 
+Live data 
