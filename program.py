@@ -1,4 +1,4 @@
-def get_data(url):
+def get_data(https://api.nasa.gov/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=iZfqQhESERl9LDQep7Wh3Lgubr3USaX9MqXhjCi3):
     """
     Get data from NASA
     """
