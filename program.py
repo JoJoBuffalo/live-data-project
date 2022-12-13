@@ -11,18 +11,10 @@ import configparser
 import re
 import csv
 import io
-import pandas as pd
-import numpy as np
 
-website = "https://api.nasa.gov/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=iZfqQhESERl9LDQep7Wh3Lgubr3USaX9MqXhjCi3"
+#website = "https://api.nasa.gov/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=iZfqQhESERl9LDQep7Wh3Lgubr3USaX9MqXhjCi3"
 
-var xhr = new XMLHttpRequest();
-xhr.open('GET', website, true);
-xhr.onreadystatechange = function() {
-  if (xhr.readyState == 4) {
-    console.log(xhr.responseText);
-  }
-}
-xhr.send();
+x = requests.get("https://api.nasa.gov/DONKI/CME?startDate=yyyy-MM-dd&endDate=yyyy-MM-dd&api_key=iZfqQhESERl9LDQep7Wh3Lgubr3USaX9MqXhjCi3")
+print(x.status_code)
 
-print(website);
+print(x); #We get a good response!
